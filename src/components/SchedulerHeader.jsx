@@ -90,7 +90,9 @@ function SchedulerHeader({ onViewChange, goNext, goBack, onSelectDate, scheduler
         <Space>
           <Spin spinning={viewSpinning} />
           <RadioGroup buttonStyle="solid" defaultValue={defaultValue} size="default" onChange={event => handleEvents(onViewChange, true, event)}>
-            {radioButtonList}
+            <Space direction="horizontal" size={3}>
+              {radioButtonList}
+            </Space>
           </RadioGroup>
         </Space>
       </Col>
